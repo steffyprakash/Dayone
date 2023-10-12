@@ -59,6 +59,10 @@ public static WebDriver driver;
 		File to=new File(path +"\\" + filename + ".png");
 		Files.copy(from, to);
 	  }
+	public static void  sendKeys(WebElement element,String name)
+	{
+		element.sendKeys(name);
+	}
 }
 
 
